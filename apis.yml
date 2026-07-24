@@ -1,8 +1,24 @@
 aid: cardurion-pharmaceuticals
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/cardurion-pharmaceuticals.png
 name: Cardurion Pharmaceuticals
-description: 'Cardurion Pharmaceuticals is a company surfaced as a portfolio company of gv and added to
-  the API Evangelist network as a stub for enrichment. Sector: life-sciences. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Cardurion Pharmaceuticals is a clinical-stage biopharmaceutical company focused on transforming
+  the treatment of cardiovascular disease and heart failure. Its research and development pipeline centers
+  on novel small-molecule programs including PDE9 inhibition for chronic heart failure (HFrEF and HFpEF)
+  and CaMKII inhibition for cardiac diseases such as catecholaminergic polymorphic ventricular tachycardia
+  (CPVT). Cardurion combines target discovery, adaptive clinical trial design, and precision-medicine
+  approaches, and was surfaced as a portfolio company of GV (Google Ventures). The company publishes a
+  corporate and R&D website but does not expose a public developer API surface at this time.'
 url: https://raw.githubusercontent.com/api-evangelist/cardurion-pharmaceuticals/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +28,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Life Sciences
+- Pharmaceuticals
+- Biotechnology
+- Cardiovascular
+- Heart Failure
+- Drug Development
+- Clinical Trials
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +45,22 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/cardurion-pharmaceuticals-domain-security.yml
 - type: Website
   url: https://cardurion.com
+- type: About
+  url: https://cardurion.com/about-cardurion/
+- type: Blog
+  url: https://cardurion.com/news/
+- type: Support
+  url: https://cardurion.com/#contact
+- type: PrivacyPolicy
+  url: https://cardurion.com/privacy-policy/
+- type: TermsOfService
+  url: https://cardurion.com/terms-of-use/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
